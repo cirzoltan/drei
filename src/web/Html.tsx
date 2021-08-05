@@ -144,7 +144,7 @@ export const Html = React.forwardRef(
       if (group.current) {
         scene.updateMatrixWorld()
         if (transform) {
-          el.style.cssText = `position:absolute;top:0;left:0;pointer-events:none;overflow:hidden;`
+          el.style.cssText = `position:absolute;top:0;left:0;pointer-events:none;`
         } else {
           const vec = calculatePosition(group.current, camera, size)
           el.style.cssText = `position:absolute;top:0;left:0;transform:translate3d(${vec[0]}px,${vec[1]}px,0);transform-origin:0 0;`
